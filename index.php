@@ -24,9 +24,9 @@
       <button onclick="recovery()" id="btn-recovery">RECUPERAR SENHA</button>
     </div>
     <div class="buttons disable" id="login">
-      <input type="text" id="matricula" placeholder="Matrícula" autcomplete="off" />
-      <input type="text" id="senha" placeholder="Senha" style="margin-bottom: 30px" autcomplete="off" />
-      <button id="btn-login">ENTRAR</button>
+      <input type="email" required id="matricula" placeholder="Matrícula" autcomplete="off" />
+      <input type="password" required id="senha" placeholder="Senha" style="margin-bottom: 30px" autcomplete="off" />
+      <button id="btn-login" onclick="auth()">ENTRAR</button>
       <button onclick="voltar()">Voltar</button>
     </div>
     <div class="buttons disable" id="password">
