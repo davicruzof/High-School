@@ -84,9 +84,37 @@ h3 {
   margin-bottom: 20px;
 }
 
-a {
-  text-decoration: none;
+#btn-recovery {
   background-color: #fff;
+}
+
+.disable {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 351px;
+  height: 50px;
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+input:focus {
+  background:var(--color-green);
+  color: #000;
 }
 
 @media only screen and (max-width: 600px) {
