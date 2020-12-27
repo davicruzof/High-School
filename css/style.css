@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf")
+}
+
+@font-face {
+  font-family: Post;
+  src: url("../assets/fonts/PostNoBillsJaffna-ExtraBold.ttf")
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --font: Poppins;
+  --font-title: Post;
+  --color: #242424;
+  --color-green: #FDF401;
+  --color-cinza: #E5E5E5;
+  --color-dark: #121212;
+  --radius-maior: 20px;
+}
+
+body {
+  font-family: var(--font);
+}
+
+h1 {
+  font-family: var(--font-title);
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 0.5rem;
+}
+
+h3 {
+  color: #fff;
+  font-size:  12px;
+  letter-spacing: 0.2rem;
+}
+
+#bg,
+.container,
+.buttons,
+.title,
+#btn-login,
+#btn-recovery {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#bg {
+  background-image: url(../images/bg.png);
+  height: 100vh;
+}
+
+.container {
+  width: 40%;
+  height: 60%;
+  background: var(--color-dark);
+}
+
+.title {
+  margin-bottom: 82px;
+}
+
+#btn-login,
+#btn-recovery {
+  width: 351px;
+  height: 60px;
+  border-radius: 8px;
+  color: var(--color);
+}
+
+#btn-login {
+  background-color: var(--color-green);
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    height: 70%;
+  }
+
+  #btn-login,
+  #btn-recovery {
+    width: 270px;
+  }
+}
